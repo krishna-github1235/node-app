@@ -1,5 +1,4 @@
 name: CD - Deploy to EC2
-name: CD - Deploy to EC2
 
 on:
   push:
@@ -26,11 +25,7 @@ jobs:
 
             git fetch origin
             git checkout main
-
-            git fetch origin
-            git checkout main
             git pull origin main
-
 
             npm install
             npm run build --if-present
